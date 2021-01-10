@@ -14,15 +14,19 @@ body{
 
 @keyframes fadeInUp{
     from{
+        margin-bottom: -50px;
         opacity: 0;
+        visibility: hidden;
     }
     to{
+        margin-bottom: 0;
         opacity: 1;
+        visibility: visible;
     }
 }
 
 section{
-    height: 100%;
+    height: 100vh;
 }
 
 #navbar{
@@ -53,13 +57,36 @@ section{
 }
 
 #welcome-section{
-    height: 100vh;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: repeat(2, 1fr);
 }
 
+#welcome-greetings{
+    visibility: visible;
+    text-align: center;
+    margin: auto auto 15px auto;
+}
 
+h1{
+    font-size: 30px;
+}
+
+#welcome-photo{
+    grid-column: 2 / 3;
+    grid-row: -1 / -3;
+    margin: auto;
+}
+
+#welcome-img{
+    width: auto;
+    height: 300px;
+}
+
+#welcome-description{
+    visibility: visible;
+    margin: 0 auto auto auto;
+}
 
 
