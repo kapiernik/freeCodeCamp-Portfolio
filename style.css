@@ -8,7 +8,7 @@ html{height: 100%;}
 
 body{
     font-family: 'Raleway', sans-serif;
-    font-size: 0.96em;
+    font-size: 18px;
     height: 100%;
 }
 
@@ -22,7 +22,23 @@ section{
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0px 1px 15px #000;
+}
+
+#nav-ul{
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.nav-li{
+    padding: 15px 15px;
+    height: 100%;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.nav-li:hover{
+    background-color: rgb(200, 200, 1);
 }
