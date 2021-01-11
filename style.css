@@ -56,9 +56,8 @@ a{
 
 #welcome-section{
     width: 100%;
-    height: 100%;
-    margin-top: 130px;
-    margin-bottom: 0;
+    height: 100vh;
+    margin-top: -20px;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr 1fr;
@@ -98,11 +97,47 @@ h1{
     margin: 0 auto auto auto;
 }
 
-#projects{
+#projects-section{
+    padding-bottom: 50px;
     height: 100%;
     background-color: #333;
+    color: #fff;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    scroll-margin-top: 40px;
 }
 
+#projects-section header{
+    text-align: center;
+    padding: 35px 0;
+    border-bottom: 2px solid #fff;
+    font-size: 30px;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid #fff;
+    padding: 25px 0 25px 0;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.project:hover{
+    background-color: rgb(31, 31, 31);
+}
+
+.project a{
+    align-self: center;
+}
+
+.project a h2{
+    color: #fff;
+}
+
+#projects-section img{
+    width: 450px;
+    height: auto;
+}
 
